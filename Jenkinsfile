@@ -8,7 +8,7 @@ pipeline {
         }
         stage('pmd') {
             steps {
-                bat 'mvn pmd:pmd'
+                sh 'mvn pmd:pmd'
             }
         }
     }
